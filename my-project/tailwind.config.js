@@ -1,4 +1,9 @@
-/** @type {import('tailwindcss').Config} */
+
+
+/** 
+ * 
+ * 
+ * @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -6,7 +11,12 @@ export default {
   ],
   theme: {
     extend: {
-     
+      backgroundImage: {
+        'map-bg': "url('./src/assets/Flags/map.svg')",
+        
+      },
+
+
       screens: {
         '3xl': '1600px',
       },
@@ -18,10 +28,12 @@ export default {
 
 colors:{
   "orange-primary":'#ED743F',
-  "jet-black":"#ED743F"
+  "jet-black":"#ED743F",
+  "light-pink":"#FBE3D9"
 }
 
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [require("tw-elements-react/dist/plugin.cjs")]
 }

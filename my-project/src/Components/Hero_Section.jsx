@@ -3,10 +3,20 @@ import Navbar from './Navbar'
 import googlePlay from '../assets/hero-section/getItOnGoogle.svg'
 import iphone1 from '../assets/hero-section/iphone1.png'
 import iphone2 from '../assets/hero-section/iphone2.svg'
-import { motion } from 'framer-motion';
+import {useMotionValue,useTransform,motion} from 'framer-motion'
+
 
 
 const Hero_Section = () => {
+  const x=useMotionValue(0)
+  const y=useMotionValue(0)
+  const rotateX=useTransform(y,[-100,100],[30,-30])
+  const rotateY=useTransform(x,[-100,100],[-30,30])
+  
+
+
+
+
   return (
     // starting div
     <div className='main-div  bg-black '>
@@ -30,9 +40,12 @@ className="flex flex-col 3xl:justify-evenly px-6 sm:px-0   w-full md:w-1/2 mt-12
 </div>
 
 {/* button */}
-<div className="flex cursor-pointer w-[150px] mt-4 sm:mt-0 sm:w-[240px] 3xl:w-[300px] ">
-<img className='w-full  h-full object-cover' src={googlePlay} alt="" />
-</div>
+<a target='_blank'  href={'https://play.google.com/store/apps/details?id=com.google.android.apps.maps&pli=1'} className="flex shadow-2xl shadow-gray-400 rounded-full cursor-pointer w-[150px] mt-4 sm:mt-0 sm:w-[240px] 3xl:w-[300px] 
+
+
+">
+<img className='w-full shadow-xl rounded-full shadow-gray-800s  h-full object-cover' src={googlePlay} alt="" />
+</a>
 
 </motion.div>
 
@@ -41,18 +54,23 @@ className="flex flex-col 3xl:justify-evenly px-6 sm:px-0   w-full md:w-1/2 mt-12
 
 {/* right div */}
 <motion.div
+style={{x,y,rotateX,rotateY,z:100,perspective:2000}}
+drag
+dragElastic={0.18}
+dragConstraints={{top:0,left:0,right:0,bottom:0}}
+whileTap={{cursor:'grabbing'}}
 initial={{ y: 300, opacity: 0 }} // Start below the view
 animate={{ y: 0, opacity: 1 }}   // End at its natural position
 transition={{ duration: 1.2, ease: "easeOut" }} // Customize the transition
 
 
-className='md:w-1/2  mt-12  md:mt-0 w-full h-auto flex md:h-full  ' >
+className='md:w-1/2   mt-12  md:mt-0 w-full h-auto flex md:h-full  ' >
     {/* images */}
-<div className="flex 3xl:self-end min:w-1/2 3xl:max-h-[911px] ">
-    <img className='  md:object-contain' src={iphone1} alt="" />
+<div style={{x,y,rotateX,rotateY,z:100000}} className="flex  3xl:self-end min:w-1/2 3xl:max-h-[911px] ">
+    <img draggable='false' className='    md:object-contain' src={iphone1} alt="" />
 </div>
 <div className="flex  3xl:self-end 3xl:max-h-[820px] min:w-1/2">
-    <img className='  sm:h-[90%] 3xl:h-full 3xl:mt-0 mt-14 md:object-contain ' src={iphone2} alt="" />
+    <img draggable='false' className='  sm:h-[90%] 3xl:h-full 3xl:mt-0 mt-14 md:object-contain ' src={iphone2} alt="" />
 </div>
 
 
