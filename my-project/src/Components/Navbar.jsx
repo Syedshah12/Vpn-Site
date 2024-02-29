@@ -73,7 +73,17 @@ const Navbar = () => {
 <div className='  flex flex-col sm:flex-row  w-full text-white'>
     <div className='flex flex-col sm:flex-row list-none w-full  justify-evenly sm:mr-12 items-end sm:items-center '> 
     <div className='flex    sm:flex-row gap-y-6 sm:gap-y-0 gap-x-4 mr-2 sm:mr-0 sm:gap-x-8 md:gap-x-24 cursor-pointer'>
-    <li className='hover:text-white/80'>Features</li>
+    <Link
+         activeClass="active" 
+         to="Features" 
+         spy={true} 
+         smooth={true} 
+         offset={50} 
+         duration={500} 
+         onSetActive={handleSetActive}
+       
+    
+    className='hover:text-white/80'>Features</Link>
         <li className='hover:text-white/80'>Resources</li>
         <Link
           activeClass="active" 
@@ -89,8 +99,8 @@ const Navbar = () => {
     </div>
         
     </div>
-    <div className='btn w-auto  sm:w-[140px] md:w-[190px] hidden   sm:flex sm:mt-0  mx-auto sm:mx-0  text-center ml-auto cursor-pointer'>
-        <div className='bg-orange-primary hover:bg-orange-primary/90   py-[1.5px] w-full px-4 rounded-full text-base'>Sign up</div>
+    <div className='btn w-auto  sm:text-sm md:text-lg sm:w-[160px] md:w-[200px] hidden    sm:flex sm:mt-0  mx-auto sm:mx-0  text-center ml-auto cursor-pointer'>
+        <a target='_blank'  href={'https://play.google.com/store/apps/details?id=com.google.android.apps.maps&pli=1'}  className='bg-orange-primary hover:bg-orange-primary/90   py-1.5 w-full px-4 rounded-full text-base'>Download Now</a>
     </div>
 </div>
 

@@ -172,7 +172,7 @@ const UserInterface = () => {
 
 {/* for button */}
 <div className='flex justify-center pt-8 cursor-pointer bg-white'>
-<div className='bg-orange-primary w-[232px] hover:bg-orange-primary/90   py-2  text-center px-4 rounded-full text-base'>Join Now</div>
+<a className='bg-orange-primary w-[232px] hover:bg-orange-primary/90   py-2  text-center px-4 rounded-full text-base'>Download Now</a>
 </div>
 
 
@@ -182,7 +182,7 @@ const UserInterface = () => {
 
    {/* heading */}
    <div className='pb-6 md:pb-0  pt-20 text-center 2xl:p-20'>
-                    <h1 className=' text-2xl leading-10 font-bold md:leading-[60px] sm:text-3xl  md:text-4xl 3xl:text-5xl '>Supported On</h1>
+                    <h1 className=' text-2xl leading-10 font-bold md:leading-[60px] sm:text-3xl  md:text-4xl 3xl:text-5xl '>Support Us</h1>
                 </div>
 
   <div className="grid lg:grid-cols-3 grid-cols-2 xl:grid-cols-4  p-8 2xl:p-12 gap-8">

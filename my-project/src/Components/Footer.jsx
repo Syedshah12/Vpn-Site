@@ -34,10 +34,10 @@ const Footer = () => {
 <div >
     <h1 className='text-2xl font-semibold'>Site Map</h1>
 </div>
-<div className='list-none space-y-6  mt-12'>
-<li>Resources</li>
-<li>Features</li>
-<li>About</li>
+<div className='list-none space-y-6     mt-12'>
+<li className='cursor-pointer hover:underline'>Resources</li>
+<li className='cursor-pointer hover:underline'>Features</li>
+<li className='cursor-pointer hover:underline'>About</li>
 
 
 </div>
@@ -49,9 +49,9 @@ const Footer = () => {
     <h1 className='text-2xl font-semibold'>Legal</h1>
 </div>
 <div className='list-none space-y-6  mt-12'>
-<li>Terms Of Services</li>
-<li>Privacy Policy</li>
-<li>Cookies Policy</li>
+<li className='cursor-pointer hover:underline'>Terms Of Services</li>
+<li className='cursor-pointer hover:underline'>Privacy Policy</li>
+<li className='cursor-pointer hover:underline'>Cookies Policy</li>
 
 
 </div>
@@ -70,21 +70,21 @@ const Footer = () => {
 </div>
 
 <div className='w-full'>
-    <hr  className='border border-black border-b-2  w-[80%] mx-auto' />
+    <hr  className='border border-black border-b-2  w-[90%] mx-auto' />
 </div>
 
 
 {/* icons section */}
-<div className='flex justify-evenly items-center p-12 space-x-8'>
+<div className='flex justify-between items-center p-12 space-x-8'>
 <div className='text-lg flex items-center leading-tight'>
     <p>@ 2024 Free vpn Inc. All rights reserved.</p>
 </div>
 <div className='icons hidden md:flex  space-x-8 '>
-<div className='max-w-[269px] 2xl:w-auto w-48'><img className='w-full h-full object-contain' src={Googleplay} alt="" /></div>
-<div className=' w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Facebook} alt="" /></div>
-<div className=' w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Twitter} alt="" /></div>
-<div className=' w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Gmail} alt="" /></div>
-<div className=' w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Insatgram} alt="" /></div>
+<div className=' cursor-pointer  max-w-[269px] 2xl:w-auto w-48'><img className='w-full h-full object-contain' src={Googleplay} alt="" /></div>
+<div className=' cursor-pointer   w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Facebook} alt="" /></div>
+<div className='  cursor-pointer  w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Twitter} alt="" /></div>
+<div className=' cursor-pointer   w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Gmail} alt="" /></div>
+<div className=' cursor-pointer   w-9 2xl:w-auto  max-w-[68px]'><img className='w-full h-full object-contain' src={Insatgram} alt="" /></div>
 </div>
 
 

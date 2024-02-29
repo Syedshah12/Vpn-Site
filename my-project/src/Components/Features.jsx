@@ -25,7 +25,7 @@ const fadeInAnimationvariants={
 
 const Features = () => {
   return (
-    <div className='main flex flex-col items-center'>
+    <div name="Features" className='main flex flex-col items-center'>
 
 {/* heading */}
 <div className='pb-6 md:pb-0 xl:mb-6 mb-2 pt-20 text-center 2xl:p-20'>

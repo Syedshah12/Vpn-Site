@@ -60,11 +60,33 @@ className=''>
 
 
 
-
 {/* second wrapper of para img and arrow */}
 <div className='flex justify-center flex-col sm:flex-row p-6'>
 
+<motion.div
+  initial={{ x: '-200' }}
+  whileInView={{ x: 0 }}
+  transition={{ duration: 1.2 }}
+  viewport={{ once: true }}
+className=' mt-0 hidden md:block   mx-auto md:mx-0 md:-mt-32 '>
+    <img src={ServerMockup} alt="" />
+</motion.div>
 
+
+{/* arrow */}
+<div className='md:flex  items-center hidden '>
+    <img src={ArrowLeft} alt="" />
+</div>
+
+
+    {/* para text */}
+<div className='flex items-center ' >
+<p className='md:leading-9 max-w-[890px] 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>2.Choose Your Server: Select your preferred server location from our global network for optimized browsing.</p>
+</div>
+
+
+
+{/* mobile view */}
 
 <motion.div
   initial={{ x: '-200' }}
@@ -74,34 +96,10 @@ className=''>
 
 
 
-
-
-className='xl:-mb-32'>
-    <img src={Signupimage} alt="" />
+className='  block md:hidden mt-12   mx-auto md:mx-0 md:-mt-32 '>
+    <img src={ServerMockup} alt="" />
 </motion.div>
 
-
-{/* arrow */}
-<div className='md:flex items-end hidden '>
-    <img src={ArrowLeft} alt="" />
-</div>
-
-
-
-
-    {/* para text */}
-<div className=' ' >
-<p className='md:leading-9 max-w-[890px] 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>2.Sign Up or Log In: Create an account or log in if you already have one.</p>
-</div>
-
-
-
-
-
-
-<div className="arrow">
-
-</div>
 
 
 
@@ -118,12 +116,12 @@ className='xl:-mb-32'>
 <div className='flex justify-center flex-col sm:flex-row p-6'>
 
     {/* para text */}
-<div className='flex flex-col justify-center ' >
+<div className='flex flex-col justify-start ' >
 <p className='md:leading-9 max-w-[890px] 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>3.Connect: Tap the "Connect" button to establish a secure VPN connection instantly.</p>
 </div>
 
 {/* arrow */}
-<div className='md:flex items-end hidden '>
+<div className='md:flex items-center hidden '>
     <img src={ArrowRight} alt="" />
 </div>
 
@@ -136,7 +134,7 @@ transition={{ duration: 1.2 }}
 viewport={{ once: true }}
 
 
-className='xl:-mt-32' >
+className='md:-mt-40 mt-12 ' >
     <img className='mx-auto md:mx-0' src={Connectmockup} alt="" />
 </motion.div>
 
@@ -152,77 +150,19 @@ className='xl:-mt-32' >
 
 
 
+
+
+
 {/* fourth wrapper of para img and arrow */}
 <div className='flex justify-center flex-col sm:flex-row p-6'>
 
 
 
-<motion.div
-  initial={{ x: '-200' }}
-  whileInView={{ x: 0 }}
-  transition={{ duration: 1.2 }}
-  viewport={{ once: true }}
-
-
-
-className=' mt-0  mx-auto md:mx-0 xl:-mt-32'>
-    <img src={ServerMockup} alt="" />
-</motion.div>
-
-
-{/* arrow */}
-<div className='md:flex items-center hidden '>
-    <img src={ArrowLeft} alt="" />
-</div>
-
-
-
-
-    {/* para text */}
-<div className=' ' >
-<p className='md:leading-9 max-w-[890px] 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>4.Choose Your Server: Select your preferred server location from our global network for optimized browsing.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-{/* fifth wrapper of para img and arrow */}
-<div className='flex justify-center flex-col sm:flex-row p-6'>
-
-    {/* para text */}
-<div className='flex flex-col justify-start ' >
-<p className='md:leading-9 max-w-[890px] 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>5.Once connected, you're all set! Enjoy unrestricted and secure browsing with just a few taps.</p>
-{/* button */}
-<a className='w-48 2xl:w-auto  cursor-pointer '><img className='rounded-sm hover:rounded-lg duration-300' src={DownloadButton} alt="" /></a>
-</div>
-
-{/* arrow */}
-<motion.div
-
-
-
-
-className='md:flex items-center hidden '>
-    <img src={ArrowRight} alt="" />
-</motion.div>
-
-
 
 <motion.div 
-initial={{ x: '200' }}
+className='md:-mt-40 hidden md:block'
+
+initial={{ x: '-200' }}
 whileInView={{ x: 0 }}
 transition={{ duration: 1.2 }}
 viewport={{ once: true }}
@@ -232,6 +172,44 @@ viewport={{ once: true }}
     <img src={MokeupRight} alt="" />
 </motion.div>
 
+
+
+
+
+
+{/* arrow */}
+<motion.div
+
+
+
+
+className='md:flex items-end hidden '>
+    <img src={ArrowLeft} alt="" />
+</motion.div>
+
+
+
+    {/* para text */}
+<div className='flex flex-col justify-start  ' >
+<p className='md:leading-9 max-w-[890px] 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>4.Once connected, you're all set! Enjoy unrestricted and secure browsing with just a few taps.</p>
+{/* button */}
+<a className='w-48 2xl:w-auto self-center mt-3 rounded-sm  cursor-pointer '><img className='rounded-sm hover:rounded-lg duration-300' src={DownloadButton} alt="" /></a>
+</div>
+
+
+
+<motion.div 
+className='md:-mt-40 block md:hidden mt-12'
+
+initial={{ x: '-200' }}
+whileInView={{ x: 0 }}
+transition={{ duration: 1.2 }}
+viewport={{ once: true }}
+
+
+>
+    <img src={MokeupRight} alt="" />
+</motion.div>
 
 
 
