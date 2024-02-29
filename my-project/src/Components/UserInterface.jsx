@@ -54,8 +54,8 @@ const UserInterface = () => {
                 </div>
 
 
-                <div className='w-full leading-tight  p-8 px-12'>
-                    <p className='md:leading-9 2xl:leading-[42px]  text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-6 md:px-0'>Unlocking a seamless online experience requires a perfect blend of unrestricted access and top-tier security, and that's precisely what we offer. Whether accessing streaming platforms, social media networks, or critical information resources, our VPN ensures accessibility from any corner of the globe. Beyond the realm of access lies the cornerstone of security. Free VPN Master employs cutting-edge encryption protocols, ensuring that each online interaction occurs within a fortified digital fortress</p>
+                <div className='w-full leading-tight  p-0 md:p-8 px-0 md:px-12'>
+                    <p className= ' md:leading-9 2xl:leading-[42px]  text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-6 md:px-0'>Unlocking a seamless online experience requires a perfect blend of unrestricted access and top-tier security, and that's precisely what we offer. Whether accessing streaming platforms, social media networks, or critical information resources, our VPN ensures accessibility from any corner of the globe. Beyond the realm of access lies the cornerstone of security. Free VPN Master employs cutting-edge encryption protocols, ensuring that each online interaction occurs within a fortified digital fortress</p>
                 </div>
 
 

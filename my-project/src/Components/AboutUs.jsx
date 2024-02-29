@@ -74,7 +74,7 @@ className='w-full   md:w-[35%] px-2 md:px-0 lg:max-h-[400px] lg:max-w-[400px]   
   viewport={{ once: true }}
 
 
-className='w-full   md:w-[35%] px-2 md:px-0 lg:max-h-[400px] lg:max-w-[400px]    xl:max-w-[500px] xl:max-h-[500px] '>
+className='w-full  hidden md:block  md:w-[35%] px-2 md:px-0 lg:max-h-[400px] lg:max-w-[400px]    xl:max-w-[500px] xl:max-h-[500px] '>
     <img className='w-full h-full object-cover' src={RocketImage} alt="" />
 </motion.div>
 
@@ -93,8 +93,25 @@ className='w-full   md:w-[35%] px-2 md:px-0 lg:max-h-[400px] lg:max-w-[400px]   
 
 
 className='w-full leading-tight  md:w-[60%] 2xl:[20%] 2xl:max-w-[1020px] max-h-[320px]  2xl:p-8'>
-    <p className='md:leading-9 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'>Unlocking a seamless online experience requires a perfect blend of unrestricted access and top-tier security, and that's precisely what we offer. Whether accessing streaming platforms, social media networks, or critical information resources, our VPN ensures accessibility from any corner of the globe. Beyond the realm of access lies the cornerstone of security. Free VPN Master employs cutting-edge encryption protocols, ensuring that each online interaction occurs within a fortified digital fortress</p>
+    <p className='md:leading-9 2xl:leading-[42px] text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-2 md:px-0'> Our commitment to top-speed security means that users can browse, stream, and communicate with confidence, knowing that their data remains shielded from prying eyes. Experience the seamless fusion of unrestricted access and robust security. Unlock unlimited access and top-speed security with Free VPN Master – your gateway to a secure and borderless online experience.</p>
 </motion.div>
+
+
+
+
+
+<motion.div
+  initial={{ x: '-200' }}
+  whileInView={{ x: 0 }}
+  transition={{ duration: 1.2 }}
+  viewport={{ once: true }}
+
+
+className='w-full block md:hidden   md:w-[35%] px-2 md:px-0 lg:max-h-[400px] lg:max-w-[400px]    xl:max-w-[500px] xl:max-h-[500px] '>
+    <img className='w-full h-full object-cover' src={RocketImage} alt="" />
+</motion.div>
+
+
 
 
 

@@ -30,7 +30,7 @@ const WhyUs = () => {
   return (
     // main div
     <div>
-<div className="wrapper">
+<div name="WhyUs" className="wrapper">
 
 {/* //heading */}
 {/* heading */}

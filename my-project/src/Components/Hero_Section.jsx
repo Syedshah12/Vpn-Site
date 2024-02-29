@@ -39,7 +39,7 @@ className=" w-full mt-12 md:mt-0 md:w-1/2 flex flex-col ">
 <div className='space-y-2 px-6 md:px-0'>
 <h1 className='md:text-4xl text-center md:text-start text-2xl 3xl:text-5xl leading-tight sm:leading-normal   font-semibold text-white
 '>Stay Protected Online with  Free <br className='hidden 3xl:block' /> VPN Master: <br className='hidden sm:block md:hidden' /> Fast and Reliable</h1>
-<p className='text-lg 3xl:text-3xl  md:text-start text-center  leading-tight text-white'>Keep your online presence <br className='block sm:hidden' /> secure <br className='hidden sm:block' /> with  Free  VPN Master. </p>
+<p className=' text-white 3xl:text-3xl font-thin  md:text-start text-center  leading-tight '>Keep your online presence <br className='block sm:hidden' /> secure <br className='hidden sm:block' /> with  Free  VPN Master </p>
 </div>
 
 {/* button */}

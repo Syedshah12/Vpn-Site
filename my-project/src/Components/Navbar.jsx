@@ -84,7 +84,18 @@ const Navbar = () => {
        
     
     className='hover:text-white/80'>Features</Link>
-        <li className='hover:text-white/80'>Resources</li>
+        <Link
+         activeClass="active" 
+         to="WhyUs" 
+         spy={true} 
+         smooth={true} 
+         offset={50} 
+         duration={500} 
+         onSetActive={handleSetActive}
+        
+        
+        
+        className='hover:text-white/80'>Why Us</Link>
         <Link
           activeClass="active" 
           to="AboutUs" 
