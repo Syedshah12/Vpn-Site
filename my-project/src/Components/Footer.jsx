@@ -28,7 +28,7 @@ const Footer = () => {
                             <img src={BinaryLogo} alt="" />
                         </div>
                         <div className="para text-lg">
-                            <p>Use Free VPN Master on your Android or iOS device for seamless protection on the go</p>
+                            <p>Keeps your online presence secure with Free VPN Master.Our fast and reliable VPN service offers top-notch protection,ensuring your data remains safe and your browsing experience smooth.  </p>
                         </div>
 
 

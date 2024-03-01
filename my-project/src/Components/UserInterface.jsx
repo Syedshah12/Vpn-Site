@@ -10,10 +10,13 @@ import MicrosoftLogo from '../assets/UI 2/Microsoft Logo.svg'
 import Chromelogo from '../assets/UI 2/Chrome logo.svg'
 import Applelogo from '../assets/UI 2/Apple logo.svg'
 import Androidlogo from '../assets/UI 2/Android logo.svg'
-import ArrowLeft from '../assets/How to use (1)/arrow-left.svg'
-import ArrowRight from '../assets/How to use (1)/arrow-right.svg'
-import Downloadimage from '../assets/How to use (1)/Download image.svg'
-import Signupimage from '../assets/How to use (1)/Sign up image.svg'
+import Github from '../assets/Logo/Github.svg'
+import fbLogo from '../assets/Logo/fbLogo.svg'
+import LinkedIn from '../assets/Logo/LinkedIn.svg'
+import IgLogo from '../assets/Logo/IgLogo.svg'
+
+
+
 
 
 
@@ -54,8 +57,8 @@ const UserInterface = () => {
                 </div>
 
 
-                <div className='w-full leading-tight  p-0 md:p-8 px-0 md:px-12'>
-                    <p className= ' md:leading-9 2xl:leading-[42px]  text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-6 md:px-0'>Unlocking a seamless online experience requires a perfect blend of unrestricted access and top-tier security, and that's precisely what we offer. Whether accessing streaming platforms, social media networks, or critical information resources, our VPN ensures accessibility from any corner of the globe. Beyond the realm of access lies the cornerstone of security. Free VPN Master employs cutting-edge encryption protocols, ensuring that each online interaction occurs within a fortified digital fortress</p>
+                <div className='w-full leading-tight  p-8 px-12'>
+                    <p className='md:leading-9 2xl:leading-[42px]  text-sm sm:text-lg 2xl:text-2xl md:text-xl  px-6 md:px-0'>Unlocking a seamless online experience requires a perfect blend of unrestricted access and top-tier security, and that's precisely what we offer. Whether accessing streaming platforms, social media networks, or critical information resources, our VPN ensures accessibility from any corner of the globe. Beyond the realm of access lies the cornerstone of security. Free VPN Master employs cutting-edge encryption protocols, ensuring that each online interaction occurs within a fortified digital fortress</p>
                 </div>
 
 
@@ -172,7 +175,7 @@ const UserInterface = () => {
 
 {/* for button */}
 <div className='flex justify-center pt-8 cursor-pointer bg-white'>
-<a className='bg-orange-primary w-[232px] hover:bg-orange-primary/90   py-2  text-center px-4 rounded-full text-base'>Download Now</a>
+<div className='bg-orange-primary w-[232px] hover:bg-orange-primary/90   py-2  text-center px-4 rounded-full text-base'>Join Now</div>
 </div>
 
 
@@ -182,7 +185,7 @@ const UserInterface = () => {
 
    {/* heading */}
    <div className='pb-6 md:pb-0  pt-20 text-center 2xl:p-20'>
-                    <h1 className=' text-2xl leading-10 font-bold md:leading-[60px] sm:text-3xl  md:text-4xl 3xl:text-5xl '>Support Us</h1>
+                    <h1 className=' text-2xl leading-10 font-bold md:leading-[60px] sm:text-3xl  md:text-4xl 3xl:text-5xl '>Supported On</h1>
                 </div>
 
   <div className="grid lg:grid-cols-3 grid-cols-2 xl:grid-cols-4  p-8 2xl:p-12 gap-8">
@@ -194,8 +197,8 @@ const UserInterface = () => {
    viewport={{
     once:true
    }}
-   className='flex justify-center'>
-    <img src={Chromelogo} alt="" />
+   className='flex cursor-pointer justify-center'>
+    <img src={IgLogo} alt="" />
    </motion.div >
    
    <motion.div
@@ -206,8 +209,8 @@ const UserInterface = () => {
      viewport={{
       once:true
      }}
-   className='flex justify-center'>
-    <img src={Applelogo} alt="" />
+   className='flex cursor-pointer justify-center'>
+    <img src={Github} alt="" />
    </motion.div>
 
    <motion.div
@@ -219,8 +222,8 @@ const UserInterface = () => {
     once:true
    }}
    
-   className='flex justify-center'>
-    <img src={Androidlogo} alt="" />
+   className='flex cursor-pointer justify-center'>
+    <img src={LinkedIn} alt="" />
    </motion.div>
 
 
@@ -234,8 +237,8 @@ const UserInterface = () => {
     once:true
    }}
    
-   className='flex justify-center'>
-    <img src={MicrosoftLogo} alt="" />
+   className='flex cursor-pointer justify-center'>
+    <img src={fbLogo} alt="" />
    </motion.div>
 
 

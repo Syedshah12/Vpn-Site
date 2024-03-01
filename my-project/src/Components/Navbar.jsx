@@ -61,10 +61,10 @@ const Navbar = () => {
   return (
     <div className='sm:h-28 h-auto bg-black relative'>
     <nav className='flex items-center h-full  w-full px-2 py-4 sm:py-0 sm:px-12'>
-<div className='flex-row flex justify-center sm:justify-start    items-center h-full w-full px-0 sm:px-8'>
+<div className='flex-row flex justify-center sm:justify-start    items-center h-full w-full px-0 '>
     {/* logo div */}
     <div className='w-[33%] flex self-start sm:self-center  items-center'>
-        <div className="logo  sm:mr-8 lg:mr-0  w-[70px] flex h-[70px] ">
+        <div className="logo  sm:mr-8 lg:mr-0  w-[80px]  flex h-[80px]  ">
     <img className='h-full w-full  object-cover ' src={binaryLogo} alt="" />
         </div>
     </div>

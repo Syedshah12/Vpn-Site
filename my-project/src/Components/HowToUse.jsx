@@ -13,7 +13,7 @@ const HowToUse = () => {
   return (
 
     // main wrapper
-    <div className='main'>
+    <div className='main px-3'>
 
 <div className="wrapper space-y-8 md:space-y-0 px-4 2xl:px-8">
     {/* heading */}

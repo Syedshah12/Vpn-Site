@@ -20,9 +20,9 @@ const Hero_Section = () => {
 
   return (
     // starting div
-    <div className='main-div  bg-black '>
+    <div className='main-div    bg-black '>
 <Navbar/>
-<div className='w-full flex flex-col md:flex-row relative   gap-x-12  px-0 sm:px-12'>
+<div className='w-full  flex flex-col md:flex-row relative   gap-x-12  px-0 sm:px-12'>
 
 
 {/* //left div */}
@@ -78,7 +78,7 @@ className='md:w-1/2   mt-12  md:mt-0 w-full h-auto flex items-end md:h-full  ' >
     <img draggable='false' className='  sm:h-[90%] 3xl:h-full 3xl:mt-0 mt-14 md:object-contain ' src={iphone2} alt="" />
 </div> */}
 
-<div style={{x,y,rotateX,rotateY,z:100000}}  className='w-full h-[420px] md:h-[520px]  2xl:h-[720px] 2xl:mt-14'>
+<div style={{x,y,rotateX,rotateY,z:100000}}  className='w-full h-[420px] md:h-[520px]  2xl:h-[785px] 2xl:mt-14'>
 <img draggable='false' className='w-full h-full object-contain' src={Phones} alt="" />
 </div>
 
